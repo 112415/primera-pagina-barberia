@@ -9,6 +9,7 @@ body{
 
 .principal{
     background: #CCCCCC;
+    padding: 20px;
 }
 
 h1{
@@ -38,12 +39,24 @@ em strong{
 
 .diferenciales{
     background: #FFFFFF;
+    padding: 30px;
 }
 
 h2{
     text-align: center;
 }
 
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
 .items{
     font-style: italic;
+}
+
+.imagenDiferenciales{
+    width: 50%;
 }
