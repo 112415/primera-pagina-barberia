@@ -1,6 +1,25 @@
 header{
     background-color: #BBBBBB;
+    /*Agrega 20px arriba y abajo. Cero en izquierda y derecha*/
+    padding: 20px 0;
 }
+
+.caja{
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    width: 940px;
+    position: relative;
+    /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
+    margin: 0 auto;
+}
+
+nav{
+    /*Position absolute tenemos control de mover libremente el bloque. Despues de Position sigue definir la posición*/
+    position: absolute;
+    /*Se deja 110px, porque revisandoe la imagen la altura es de 250, se deja aprox 110 para que el contenido quede en la mitad*/
+    top: 110px;
+    right: 0px;
+}
+
 nav li{
     display: inline;
     margin: 0 0 0 15px;
