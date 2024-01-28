@@ -1,0 +1,15 @@
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    /*Cabmiar texto a mayusculas*/
+    text-transform: uppercase;
+    /*Para que no resalte como hipervinculo*/
+    color: #000000;    
+    font-weight: bold;
+    font-size: 22px;
+    /*Para quitarle el subrayado de hipervinculo*/
+    text-decoration: none;
+}
