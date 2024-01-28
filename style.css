@@ -3,16 +3,20 @@ body{
 }
 
 #banner{
+    /*Ancho del elemento con propiedad width:*/
     width: 100%;
 }
 
 h1{
     text-align: center;
-    /*Ejemplo del margen
-    height: 150px;
+    
+    /*Altura del elemento con propiedad height: */
+    /*height: 150px;
     border: 10px solid#000000;
-    padding: 20px;
-    margin: 40px;
+    /*Margen interno del elemento con propiedad padding: */
+    /*padding: 20px;
+    /*Margen externo del elemento con propiedad margin: */
+    /*margin: 40px;
     */
 }
 
@@ -26,4 +30,8 @@ em strong{
 
 #mision{
     font-size: 20px;
+}
+
+.items{
+    font-style: italic;
 }
