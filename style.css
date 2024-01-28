@@ -1,18 +1,20 @@
-body{
-    
-}
-
 #banner{
     /*Ancho del elemento con propiedad width:*/
     width: 100%;
 }
 
+.titulo-principal{
+    /*Padding para que se recorra 30px a la derecha el header y en todas las direcciones*/
+    padding: 30px;
+}
+
 .principal{
     background: #CCCCCC;
+    /*Para darle espacio de 20px en todas las direcciones*/
     padding: 20px;
 }
 
-h1{
+.titulo-centralizado{
     text-align: center;
     
     /*Altura del elemento con propiedad height: */
@@ -26,6 +28,7 @@ h1{
 }
 
 p{
+    /*Para centrar texto*/
     text-align: center;
 }
 
@@ -39,17 +42,18 @@ em strong{
 
 .diferenciales{
     background: #FFFFFF;
+    /*Para darle espacio de 20px en todas las direcciones del bloque*/
     padding: 30px;
 }
 
-h2{
-    text-align: center;
-}
-
 ul{
+    /*Para hacer el bloque a la medida del texto y no tome todo el largo de la pagina*/
     display: inline-block;
+    /*Para colocar hasta arriba el listado*/
     vertical-align: top;
+    /*Para separar 20% entre el bloque ul y la imagen*/
     width: 20%;
+    /*Para agregar separación en la derecha del bloque*/
     margin-right: 15%;
 }
 
