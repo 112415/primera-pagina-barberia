@@ -35,3 +35,26 @@ nav a{
     /*Para quitarle el subrayado de hipervinculo*/
     text-decoration: none;
 }
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    width: 30%;
+    vertical-align: top;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
