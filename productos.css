@@ -36,12 +36,36 @@ nav a{
     text-decoration: none;
 }
 
+.productos{
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    width: 940px;
+    /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
+    margin: 0 auto;
+    /*Para darle altura/separacion entre el Top y el titutlo h2*/
+    padding: 50px;
+}
+
 .productos li{
+    /*con online-block Se puede ajustar el tamaño de su contenido/bloque*/
     display: inline-block;
     text-align: center;
-    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    /*Agregamos background solo como ayuda para visualizar el bloque y las separaciones*/
+    /*background: #CCCCCC;*/
+    /*30% de espacio entre cada bloque <li>*/
+    /*Es decir 90% total : 30% * 3(bloques/item/lista li) */
     width: 30%;
     vertical-align: top;
+    /*Para agregar una separación de 1.5% entre cada lado de cada bloque li. Es decir 6 espacios * 1.5% = 9%*/
+    /*Y 3 bloques cada uno con 30% = 90*/
+    /*Por lo tanto: 
+    /*9% + 90% = */
+    /*= 99% ya asigado */
+    margin: 0 1.5%;
+    /*Añade top y down 30px y 20px a los laterales.*/
+    /*Si se agrega el 20px lateral, sobrepasamos el 99% de los 940px. Por lo tanto se usa box-sizing*/
+    padding: 30px 20px;
+    /*Con esto evitamos superar externamente los 20px y se restan internamente del box*/
+    box-sizing: border-box;
 }
 
 .productos h2{
