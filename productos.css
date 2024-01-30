@@ -66,6 +66,13 @@ nav a{
     padding: 30px 20px;
     /*Con esto evitamos superar externamente los 20px y se restan internamente del box*/
     box-sizing: border-box;
+
+    /*Comineza Border, rellenado del box, entre el paading y el margin. Para mejor visualización revisar ctrl + shift + I .productos li*/        
+    /*border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    /*Todo sobre los bordes se puede simplificar:*/
+    border: 2px solid #000000;
 }
 
 .productos h2{
