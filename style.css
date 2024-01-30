@@ -242,6 +242,8 @@ Pagina Home/index
     /* 2 veces el tamaño por defecto*/
     font-size: 2em;
     margin: 0 0 1em;
+    /*visualmente no altera, la pagina solo esta imagen aplica en este bloque, no aplique en los titutlos*/
+    clear: left;
 }
 
 .principal p{
@@ -254,6 +256,13 @@ Pagina Home/index
 
 .principal em{
     font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    /*propiedad y posicionamiento. Hace como una copia de la imagen y deja una sombra para que la sombra siga respetando el bloque*/
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
 .imagenDiferenciales{
