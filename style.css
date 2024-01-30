@@ -1,65 +1,144 @@
-#banner{
-    /*Ancho del elemento con propiedad width:*/
-    width: 100%;
+header{
+    background-color: #BBBBBB;
+    /*Agrega 20px arriba y abajo. Cero en izquierda y derecha*/
+    padding: 20px 0;
 }
 
-.titulo-principal{
-    /*Padding para que se recorra 30px a la derecha el header y en todas las direcciones*/
-    padding: 30px;
+.caja{
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    width: 940px;
+    position: relative;
+    /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
+    margin: 0 auto;
 }
 
-.principal{
-    background: #CCCCCC;
-    /*Para darle espacio de 20px en todas las direcciones*/
-    padding: 20px;
+nav{
+    /*Position absolute tenemos control de mover libremente el bloque. Despues de Position sigue definir la posición*/
+    position: absolute;
+    /*Se deja 110px, porque revisandoe la imagen la altura es de 250, se deja aprox 110 para que el contenido quede en la mitad*/
+    top: 110px;
+    right: 0px;
 }
 
-.titulo-centralizado{
-    text-align: center;    
-    /*Altura del elemento con propiedad height: */
-    /*height: 150px;
-    border: 10px solid#000000;
-    /*Margen interno del elemento con propiedad padding: */
-    /*padding: 20px;
-    /*Margen externo del elemento con propiedad margin: */
-    /*margin: 40px;
-    */
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-p{
-    /*Para centrar texto*/
-    text-align: center;
+nav a{
+    /*Cabmiar texto a mayusculas*/
+    text-transform: uppercase;
+    /*Para que no resalte como hipervinculo*/
+    color: #000000;    
+    font-weight: bold;
+    font-size: 22px;
+    /*Para quitarle el subrayado de hipervinculo*/
+    text-decoration: none;
 }
 
-em strong{
-    color: red;
+/*Evento para movimiento del mouse*/
+nav a:hover{
+    /*Al pasar el mouse encima de los link de navegacion cambia de color*/
+    color: #c78c19;
+    /*Tambien subrayamos el texto al pasar el mouse*/
+    text-decoration: underline;
 }
 
-#mision{
-    font-size: 20px;
+.productos{
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    width: 940px;
+    /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
+    margin: 0 auto;
+    /*Para darle altura/separacion entre el Top y el titutlo h2*/
+    padding: 50px;
 }
 
-.diferenciales{
-    background: #FFFFFF;
-    /*Para darle espacio de 20px en todas las direcciones del bloque*/
-    padding: 30px;
-}
-
-ul{
-    /*Para hacer el bloque a la medida del texto y no tome todo el largo de la pagina*/
+.productos li{
+    /*con online-block Se puede ajustar el tamaño de su contenido/bloque*/
     display: inline-block;
-    /*Para colocar hasta arriba el listado*/
+    text-align: center;
+    /*Agregamos background solo como ayuda para visualizar el bloque y las separaciones*/
+    /*background: #CCCCCC;*/
+    /*30% de espacio entre cada bloque <li>*/
+    /*Es decir 90% total : 30% * 3(bloques/item/lista li) */
+    width: 30%;
     vertical-align: top;
-    /*Para separar 20% entre el bloque ul y la imagen*/
-    width: 20%;
-    /*Para agregar separación en la derecha del bloque*/
-    margin-right: 15%;
+    /*Para agregar una separación de 1.5% entre cada lado de cada bloque li. Es decir 6 espacios * 1.5% = 9%*/
+    /*Y 3 bloques cada uno con 30% = 90*/
+    /*Por lo tanto: 
+    /*9% + 90% = */
+    /*= 99% ya asigado */
+    margin: 0 1.5%;
+    /*Añade top y down 30px y 20px a los laterales.*/
+    /*Si se agrega el 20px lateral, sobrepasamos el 99% de los 940px. Por lo tanto se usa box-sizing*/
+    padding: 30px 20px;
+    /*Con esto evitamos superar externamente los 20px y se restan internamente del box*/
+    box-sizing: border-box;
+
+    /*Comineza Border, rellenado del box, entre el paading y el margin. Para mejor visualización revisar ctrl + shift + I .productos li*/        
+    /*border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    /*Todo sobre los bordes se puede simplificar:*/
+    border: 2px solid #000000;
+
+    /*Para agregar un redondeo en el Border:*/
+    /*Se puede asignar individualmente cada valor de cada esquina:*/
+    /*border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    /*Para simplififcar lo anterior: comienza de superior derecha y en sentido manecillas del reloj*/
+    /*border-radius: 10px 25px 40px 50px;
+
+    /*Para aplicar el mismo redondeo a todas las esquinas*/
+    border-radius: 10px;
 }
 
-.items{
-    font-style: italic;
+/*Evento para movimiento del mouse*/
+.productos li:hover{
+    /*cambiar el color de los 3 borders al pasar el mouse encima de ellos*/
+    border-color: #c78c19;
+    /*Al declarar el siguiente comando, no funiona, ya que toma como prioridad el delcarado en .productos h2 con font-size: 30px*/
+    /*Para corregirlo y que la siguiente declaracion funcione se crea .productos li:hover h2 */
+    /*font-size: 33px;*/
 }
 
-.imagenDiferenciales{
-    width: 50%;
+/*Cuando pasa mouse sobre h2 hace el efecto para aumentar a 33px todo el texto interno*/
+.productos li:hover h2{
+    font-size: 33px;    
+}
+
+/*Evento para capturar el click*/
+/*Al hacer click en uno de los 3 borders cambiara a color verde*/
+.productos li:active{
+    border-color: #088C19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    /*Para agregar espacio entre el top y la imagen*/
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    /*Por default 16px*/
+    font-size: 13px;
+    /*Para darle espacio de 20px en todas direcciones, en este caso para bajar o separar el texto hacia abajo*/
+    margin: 20px;
 }
