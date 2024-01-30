@@ -142,3 +142,39 @@ footer{
     /*Para darle espacio de 20px en todas direcciones, en este caso para bajar o separar el texto hacia abajo*/
     margin: 20px;
 }
+
+/*
+Pagina Contacto
+------------------------------------------------------------------------------------------------------------
+*/
+
+main{
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    width: 940px;
+    /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
+    margin: 0 auto;
+}
+
+form{
+    /*Agregamos separación arriba y abajo de 40px y 0 en los laterales*/
+    margin: 40px 0;
+}
+
+form label{
+    /*Para hacer un bloque en toda la linea, es decir, un bloque por linea*/
+    display: block;
+    font-size: 20px;
+    /*Para agregar separación abajo*/
+    margin: 0 0 10px;
+}
+
+form input{
+    /*Para hacer un bloque en toda la linea, es decir, un bloque por linea*/
+    display: block;
+    /*Para agregar separación abajo*/
+    margin: 0 0 20px;
+    /*Para aumentar el tamaño del input entre el contenido y el borde*/
+    padding: 10px 25px;
+    /*Para alargar el input*/
+    width: 50%;
+}
