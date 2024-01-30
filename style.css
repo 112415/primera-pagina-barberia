@@ -161,7 +161,8 @@ form{
 }
 
 /*Para no repetir se agrega form p*/
-form label, form p{
+/*Como se actualizao a legend, se sustituye la etiqueta p con legend*/
+form label, form legend{
     /*Para hacer un bloque en toda la linea, es decir, un bloque por linea*/
     display: block;
     font-size: 20px;
