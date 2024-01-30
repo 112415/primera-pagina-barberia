@@ -93,6 +93,26 @@ nav a:hover{
     border-radius: 10px;
 }
 
+/*Evento para movimiento del mouse*/
+.productos li:hover{
+    /*cambiar el color de los 3 borders al pasar el mouse encima de ellos*/
+    border-color: #c78c19;
+    /*Al declarar el siguiente comando, no funiona, ya que toma como prioridad el delcarado en .productos h2 con font-size: 30px*/
+    /*Para corregirlo y que la siguiente declaracion funcione se crea .productos li:hover h2 */
+    /*font-size: 33px;*/
+}
+
+/*Cuando pasa mouse sobre h2 hace el efecto para aumentar a 33px todo el texto interno*/
+.productos li:hover h2{
+    font-size: 33px;    
+}
+
+/*Evento para capturar el click*/
+/*Al hacer click en uno de los 3 borders cambiara a color verde*/
+.productos li:active{
+    border-color: #088C19;
+}
+
 .productos h2{
     font-size: 30px;
     font-weight: bold;
