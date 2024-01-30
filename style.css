@@ -261,6 +261,9 @@ Pagina Home/index
 .utensilios{
     width: 120px;
     /*propiedad y posicionamiento. Hace como una copia de la imagen y deja una sombra para que la sombra siga respetando el bloque*/
+    /*Sirve para que el elemento se destaque en la pantalla, 
+    la superficie del elemento continúa siendo utilizada 
+    y los otros elementos de texto o elementos en líneas se posicionan alrededor de él*/
     float: left;
     margin: 0 20px 20px 0;
 }
