@@ -26,32 +26,38 @@
         <!--Creación de formulario:-->
         <form>
             <label for="nombreApellido">Nombre y Apellido</label>
-            <input type="text" id="nombreApellido">
+            <input type="text" id="nombreApellido" class="input-padron">
 
             <label for="correoElectronico">Correo Electrónico</label>
-            <input type="text" id="correoElectronico">
+            <input type="text" id="correoElectronico" class="input-padron">
 
             <label for="telefono">Teléfono</label>
-            <input type="text" id="telefono">
+            <input type="text" id="telefono" class="input-padron">
 
             <label for="mensaje">Mensaje</label>
-            <textarea name="" id="mensaje" cols="70" rows="10"></textarea>
+            <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
 
             <div>
-                <p>Cómo le gustaría que lo contactemos?</p>
+                <p>¿Cómo le gustaría que lo contactemos?</p>
 
+                <!--Se agrega name para que todos los elementos formen parte del mismo grupo-->
+                <!-- De esta forma queda primero el texto y despues el radio
                 <label for="radio-email">Email</label>
                 <input type="radio" name="contacto" id="radio-email">
+                -->
 
-                <label for="radio-telefono">Teléfono</label>
-                <input type="radio" name="contacto" id="radio-telefono">
+                <!--
+                    Para colocar primero el radio y despues el texto, se agrega el input despues del label
+                -->
+                <label for="radio-email"><input type="radio" name="contacto" id="radio-email">Email</label>
 
-                <label for="radio-whatsapp">WhatsApp</label>
-                <input type="radio" name="contacto" id="radio-whatsapp">
+                <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono">Teléfono</label>                
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp">WhatsApp</label>                
 
             </div>
 
-            <label><input type="checkbox">Le gustaría recibir novedades de la Barbería Alura?</label>            
+            <label class="checkbox"><input type="checkbox">¿Le gustaría recibir novedades de la Barbería Alura?</label>            
 
             <input type="submit" value="Enviar formulario">
         </form>

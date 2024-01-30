@@ -160,7 +160,8 @@ form{
     margin: 40px 0;
 }
 
-form label{
+/*Para no repetir se agrega form p*/
+form label, form p{
     /*Para hacer un bloque en toda la linea, es decir, un bloque por linea*/
     display: block;
     font-size: 20px;
@@ -168,7 +169,8 @@ form label{
     margin: 0 0 10px;
 }
 
-form input{
+/* form input, form textarea{*/
+.input-padron{
     /*Para hacer un bloque en toda la linea, es decir, un bloque por linea*/
     display: block;
     /*Para agregar separación abajo*/
@@ -178,3 +180,49 @@ form input{
     /*Para alargar el input*/
     width: 50%;
 }
+
+.checkbox{
+    /*Para agregar separación arriba y abajo de 20px*/
+    margin: 20px 0;
+}
+
+/*
+Jerarquias
+con selectores
+etiqueta    = 1
+class       = 10
+ID          = 100
+inline      = 1000
+
+Un marcador de etiqueta = 1
+Por lo tanto es el de menor jerarquia
+p{    
+    color: red;
+}
+
+dos marcadores de etiquetas form y p = 2
+tiene mayor jerarquia que un marcador de una etiqueta
+form p{
+    color: blue;
+}
+
+class tiene aun mayor jerarquia que un marcador con dos etiquetas = 10
+.test{
+    color: yellow;
+}
+
+selector etiqueta mas clase = 11
+etiqueta mas class tiene mayo jerarquia que solamente class
+p.test{
+    color: orange;
+}
+
+selector ID = 100
+mayor jerarquia que class mas un selector de etiqueta
+#test{
+    color: pink;
+}
+
+La mayor jerarquia es inline = 1000, que viene directo desde html, considera lo de css inferior
+style="color: purple"
+*/
