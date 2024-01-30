@@ -134,3 +134,11 @@ footer{
     /*Para agregar espacio entre el top y la imagen*/
     padding: 40px;
 }
+
+.copyright{
+    color: #FFFFFF;
+    /*Por default 16px*/
+    font-size: 13px;
+    /*Para darle espacio de 20px en todas direcciones, en este caso para bajar o separar el texto hacia abajo*/
+    margin: 20px;
+}
