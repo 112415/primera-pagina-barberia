@@ -127,3 +127,10 @@ nav a:hover{
     font-weight: bold;
     margin-top: 10px;
 }
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    /*Para agregar espacio entre el top y la imagen*/
+    padding: 40px;
+}
