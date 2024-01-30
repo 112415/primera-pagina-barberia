@@ -210,6 +210,24 @@ form label, form legend{
     
 }
 
+/*estilo para la tabla*/
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+/*Para dibujar lineas de la tabla*/
+th, td{
+    border: 1px solid #000000;
+    /*espacio interno*/
+    padding: 8px 15px;
+}
+
 /*
 Jerarquias
 con selectores
