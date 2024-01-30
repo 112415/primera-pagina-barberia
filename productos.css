@@ -73,6 +73,16 @@ nav a{
     border-color: #000000;
     /*Todo sobre los bordes se puede simplificar:*/
     border: 2px solid #000000;
+
+    /*Para agregar un redondeo en el Border:*/
+    /*Se puede asignar individualmente cada valor de cada esquina:*/
+    /*border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    /*Para simplififcar lo anterior: comienza de superior derecha y en sentido manecillas del reloj*/
+    /*border-radius: 10px 25px 40px 50px;
+
+    /*Para aplicar el mismo redondeo a todas las esquinas*/
+    border-radius: 10px;
 }
 
 .productos h2{
