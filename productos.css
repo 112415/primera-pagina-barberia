@@ -36,6 +36,14 @@ nav a{
     text-decoration: none;
 }
 
+/*Evento para movimiento del mouse*/
+nav a:hover{
+    /*Al pasar el mouse encima de los link de navegacion cambia de color*/
+    color: #c78c19;
+    /*Tambien subrayamos el texto al pasar el mouse*/
+    text-decoration: underline;
+}
+
 .productos{
     /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
     width: 940px;
