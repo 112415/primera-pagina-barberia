@@ -244,6 +244,36 @@ Pagina Home/index
     width: 100%;
 }
 
+/*Seleccion de elementos*/
+/*Selectores avanzados en CSS*/
+/*Ejemplo de seleccionar solamente el parrafo hijo y no todos*/
+/*Selector >, para acceder a los hijos de determinado elemento*/
+/*Accde a todos los p dentro de main*//*
+main > p{
+    background: red;
+}
+
+/*el primer parrafo despues de img */
+/*Selector +, accede al primer hermanno de determinado elemento*/
+/*Accede el primer p despues de una img*/
+/*img + p{
+    background: yellow;
+}
+
+/*a todos los parrafos que vienen despues de img */
+/*Selector ~, accede a todos los hermanos de determinado elemento*/
+/*Accede a todos los p despues de una img*/
+/*img ~ p{
+    background: green;
+}
+
+/*para afectar a todos los demas menos al segundo parrafo*/
+/*Selector not, accede a los elementos excepto algunos*/
+/*accede a todos los p dentro de main excepto p que tiene id mision*/
+/*main p:not(#mision){
+    background: orange;
+}
+*/
 .principal{
     /*Para separar el espacio entre el banner y el texto titulo*/
     padding: 3em 0;
