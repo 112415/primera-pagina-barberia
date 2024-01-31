@@ -151,12 +151,16 @@ Pagina Contacto
 ------------------------------------------------------------------------------------------------------------
 */
 
+/*Afectó este selector debido al cambio en Home/index
+Por lo tanto se elimina, el contenido de width y margin se mueve a .diferenciales{}*/
+/*
 main{
     /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
-    width: 940px;
+    /*width: 940px;
     /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
-    margin: 0 auto;
-}
+    /*margin: 0 auto;
+}*/
+
 
 form{
     /*Agregamos separación arriba y abajo de 40px y 0 en los laterales*/
@@ -240,6 +244,16 @@ Pagina Home/index
     width: 100%;
 }
 
+.principal{
+    /*Para separar el espacio entre el banner y el texto titulo*/
+    padding: 3em 0;
+    background: #FEFEFE;
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    width: 940px;
+    /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
+    margin: 0 auto;
+}
+
 .titulo-principal{
     text-align: center;
     /* 2 veces el tamaño por defecto*/
@@ -247,6 +261,27 @@ Pagina Home/index
     margin: 0 0 1em;
     /*visualmente no altera, la pagina solo esta imagen aplica en este bloque, no aplique en los titutlos*/
     clear: left;
+}
+
+/*Ejemplos de Pseudoclase o Pseudoelementos*/
+/*Pseudoclase*/
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+
+/*Pseudoclase*/
+p:first-line{
+    font-style: italic;
+}
+
+/*Pseudoclase o Pseudoelementos*/
+.titulo-principal:before{
+    content: "[";
+}
+
+/*Pseudoclase o Pseudoelementos*/
+.titulo-principal:after{
+    content: "]";
 }
 
 .principal p{
@@ -274,11 +309,29 @@ Pagina Home/index
 .mapa{
     /*espacio entre el mapa y el titulo diferenciales*/
     padding: 3em 0;
+    /*Hace el degradado*/
+    background: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;    
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    /*Como comentario para corregir errores
+    /*Considerando que las pantallas son de 1080px, con 940px se tiene 70% aprox*/
+    /*width: 940px;
+    /*Arriba y abajo 0, y en automatico se ajusta izquierda y derecha. Es decir se centra con base al 70%*/
+    /*margin: 0 auto;
+    /*fin comentarios*/
 }
 
 .contenido-diferenciales{
@@ -298,6 +351,14 @@ Pagina Home/index
 .items{
     /*Para hacer separación entre lineas de texto*/
     line-height: 1.5;
+}
+
+/*Pseudoelemento o Pseudoclase*/
+/*Se agrega una estrella en unicode antes de cada item de la lista*/
+.items:before{
+    content: "★";
+    /*En unicode la estrella*/
+    /*content: U+066D;*/
 }
 
 /*Pseudoclases. Al primer elemento de la lista haz lo indicado*/
