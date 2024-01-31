@@ -281,7 +281,26 @@ Pagina Home/index
     text-align: center;
 }
 
-.imagenDiferenciales{
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    /*la imagen será 40% del 640px*/
+    width: 40%;
+    /*Como usamos inline-block. En HTML se tiene que ser una misma linea </ul><img para poder mover la imagen a la derecha de diferenciales*/
+    display: inline-block;
+    /*Para colocar la lista al tope*/
+    vertical-align: top;
+}
+
+.items{
+    /*Para hacer separación entre lineas de texto*/
+    line-height: 1.5;
+}
+
+.imagen-diferenciales{
     width: 60%;
 }
 
