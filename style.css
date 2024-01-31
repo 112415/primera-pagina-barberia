@@ -300,6 +300,11 @@ Pagina Home/index
     line-height: 1.5;
 }
 
+/*Pseudoclases. Al primer elemento de la lista haz lo indicado*/
+.items:first-child{
+    font-weight: bold;
+}
+
 .imagen-diferenciales{
     width: 60%;
 }
