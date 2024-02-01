@@ -400,6 +400,9 @@ p:first-line{
     width: 60%;   
     /*Se deja una transition de 400ms para el hover de opacidad*/
     transition: 400ms; 
+    /*Sombras 10px a la derecha, -10px a hacia abajo , cuarto parametro difumacion,  hasta donde se quiere expandir la sombra y por ultimo color de  la sombra */
+    box-shadow: 10px 10px 30px 10px #000000;
+
 }
 
 /*Opacidad de la imagen*/
