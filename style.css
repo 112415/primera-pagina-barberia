@@ -290,7 +290,7 @@ main > p{
     font-size: 2em;
     margin: 0 0 1em;
     /*visualmente no altera, la pagina solo esta imagen aplica en este bloque, no aplique en los titutlos*/
-    clear: left;
+    clear: left;        
 }
 
 /*Ejemplos de Pseudoclase o Pseudoelementos*/
@@ -397,7 +397,14 @@ p:first-line{
 }
 
 .imagen-diferenciales{
-    width: 60%;
+    width: 60%;   
+    /*Se deja una transition de 400ms para el hover de opacidad*/
+    transition: 400ms; 
+}
+
+/*Opacidad de la imagen*/
+.imagen-diferenciales:hover{
+    opacity: 0.3;
 }
 
 .video{
