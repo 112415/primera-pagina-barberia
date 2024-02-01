@@ -415,6 +415,24 @@ p:first-line{
     margin: 1em auto;
 }
 
+/*Para hacerlo responsive para celulares*/
+/*si encuentras pantalla hasta 480px, haz:*/
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;        
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
 /*
 Jerarquias
 con selectores
